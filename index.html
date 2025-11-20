@@ -1,18 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-            <style>
-            @theme {
-                --color-clifford: #da373d;
-            }
-            </style>
-    </head>
-    <body>
-        <h1 class="text-3xl font-bold underline">      
-        Tailwind
-        </h1>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umi & Rud - Home</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+<!-- Header -->
+<header class="w-full bg-white py-4 shadow">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <h1 class="text-xl font-semibold text-black">Home</h1>
+    <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+      <li><a href="index.html" class="hover:text-black">Home</a></li>
+      <li><a href="about.html" class="hover:text-black">About</a></li>
+      <li><a href="case-studies.html" class="hover:text-black">Case Studies</a></li>
+      <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Intro Section -->
+<section class="bg-black text-white py-20 text-center">
+  <img src="assets/home-hero.jpg" alt="Home Hero" class="mx-auto rounded-lg shadow-lg mb-8">
+  <h2 class="text-4xl font-bold mb-6">Hi, We're Umi & Rud 👋</h2>
+  <p class="text-gray-300 leading-relaxed mb-6 max-w-3xl mx-auto">
+    Welcome to our learning platform for full-stack and Python developers. Explore tutorials, code snippets, and interactive exercises to sharpen your skills.
+  </p>
+  <a href="case-studies.html" class="inline-block bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400">
+    Start Learning Now!
+  </a>
+</section>
+
+<!-- Web Development Card -->
+<section class="bg-black text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <img src="assets/webdev.jpg" alt="Web Development" class="w-full rounded-lg shadow-lg" />
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Build modern websites with HTML, CSS, JS, React, and Tailwind. Interactive tutorials, real-time previews, and practical exercises included.
+      </p>
+      <a href="case-studies.html#webdev" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Python Programming Card -->
+<section class="bg-black text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <img src="assets/python.jpg" alt="Python Programming" class="w-full rounded-lg shadow-lg" />
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Python Programming</h3>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Automate tasks, analyze data, and build Python applications with curated tutorials and code snippets.
+      </p>
+      <a href="case-studies.html#python" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Machine Learning Card -->
+<section class="bg-black text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <img src="assets/ml.jpg" alt="Machine Learning" class="w-full rounded-lg shadow-lg" />
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Machine Learning</h3>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Explore AI models and ML algorithms with practical examples and hands-on code exercises.
+      </p>
+      <a href="case-studies.html#ml" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-16 border-t mt-20 text-center">
+  <p class="text-gray-500 text-sm">©2025 Umi & Rud Learning Platform</p>
+</footer>
+
+</body>
 </html>
